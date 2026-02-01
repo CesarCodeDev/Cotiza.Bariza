@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bariza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Style/Main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-white bg-white shadow-sm">
+            <div class="container-fluid">
+                <div class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    BARIZA
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-link" type="button" onclick="window.location.href='../Index.html'">Cerrar Sesión</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Informaciòn del Cliente -->
+    <section class="container mt-5">
+        <div class="card border-0 shadow-sm rounded-3 bg-white px-3 py-3">
+            <div class="card-header bg-white card-header-custom">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Círculo del usuario (Cabeza) -->
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <!-- Líneas de información/datos -->
+                  <line x1="17" y1="8" x2="21" y2="8" />
+                  <line x1="17" y1="12" x2="23" y2="12" />
+                  <line x1="17" y1="16" x2="21" y2="16" />
+                </svg>
+                Información del Cliente
+            </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_cliente">Nombre del Cliente:</label>
+                        <input type="text" class="form-control" id="Lbl_cliente" placeholder="Ingrese el nombre del cliente">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_nit">NIT del Cliente:</label>
+                        <input type="text" class="form-control" id="Lbl_nit" placeholder="Ingrese el NIT del cliente">
+                    </div>
+                </div>
+                <div class="row mb-3 mt-3">
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_Telefono">Teléfono del Cliente:</label>
+                        <input type="text" class="form-control" id="Lbl_Telefono" placeholder="Ingrese el teléfono del cliente">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_NotaAd">Notas Adicionales:</label>
+                        <input type="text" class="form-control" id="Lbl_NotaAd" placeholder="Ingrese notas adicionales">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informaciòn del Producto -->
+    <section class="container mt-5">
+        <div class="card border-0 shadow-sm rounded-3 bg-white px-3 py-3">
+            <div class="card-header bg-white card-header-custom">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Círculo del usuario (Cabeza) -->
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <!-- Líneas de información/datos -->
+                  <line x1="17" y1="8" x2="21" y2="8" />
+                  <line x1="17" y1="12" x2="23" y2="12" />
+                  <line x1="17" y1="16" x2="21" y2="16" />
+                </svg>
+                Detalle de Cotizaciòn
+            </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_Material">Descripción del Material / Servicio:</label>
+                        <input type="text" class="form-control" id="Lbl_Material">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_Area">Área (m²):</label>
+                        <input type="text" class="form-control" id="Lbl_Area">
+                    </div>
+                </div>
+                <div class="row mb-3 mt-3">
+                    <div class="col-12 col-md-6">
+                        <label for="Lbl_ValorUnitario">Valor Unitario ($/m²):</label>
+                        <input type="text" class="form-control" id="Lbl_ValorUnitario">
+                    </div>
+                    <div class="col-12 col-md-6 py-4">
+                        <button type="button" id="Btn_calcular" class="btn btn-outline-success w-100">Agregar</button>
+                    </div>
+                </div>
+
+                <!-- Tabla de Productos -->
+                 <div class="row mb-3">
+                    <table class="table table-hover" id="Tabla_Productos">
+                        <thead>
+                          <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Descripción del Material / Servicio</th>
+                            <th scope="col">Área (m²)</th>
+                            <th scope="col">Valor Unitario ($/m²)</th>
+                            <th scope="col">Total ($/m²)</th>
+                            <th scope="col">Opciones</th>
+                          </tr>
+                        </thead>
+                    </table>
+                 </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-3 justify-content-center">
+            <div class="col-12 col-md-6">
+                <button type="button" class="btn btn-success w-100" Onclick="generarPDF()">Generar Cotización PDF</button>
+            </div>
+        </div>
+    </section>
+    <script src="../Scripts/calcular.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

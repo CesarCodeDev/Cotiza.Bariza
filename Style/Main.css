@@ -1,0 +1,39 @@
+/* Tipo de Letra y Fondo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand-logo svg {
+    width: 32px;
+    height: 32px;
+    color: var(--accent);
+}
+
+.card-header-custom {
+    border-bottom: none !important;
+    position: relative;
+}
+
+.card-header-custom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.125);
+}
