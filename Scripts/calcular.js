@@ -405,7 +405,7 @@ function generarPDF() {
                     <tr>
                         <th class="col-item">Item</th>
                         <th class="col-desc">Descripción</th>
-                        <th class="col-unit">Área (m²)</th>
+                        <th class="col-unit">Área</th>
                         <th class="col-price">Precio Unitario</th>
                         <th class="col-total">Total</th>
                     </tr>
