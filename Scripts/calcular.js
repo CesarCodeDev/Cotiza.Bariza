@@ -114,7 +114,7 @@ function generarPDF() {
     const contenidoPDF = `
     <html>
     <head>
-        <title>Cotización - BARIZA S.A.S</title>
+        <title>Cotización - Cesar Barrios Narvaez</title>
         <style>
             :root {
                 --primary: #1a1a1a;
@@ -374,9 +374,9 @@ function generarPDF() {
         <div class="invoice-container">
             <header class="header">
                 <div>
-                    <div class="brand-logo">BARITZA S.A.S</div>
-                    <p style="font-size: 13px; color: #6b7280;">Préstamos de Servicios por Suministros</p>
-                    <p style="font-size: 13px; color: #6b7280;">NIT: 900.661.511 - 2</p>
+                    <div class="brand-logo">Cesar Barrios Narvaez</div>
+                    <p style="font-size: 13px; color: #6b7280;">Trabajo en obra civil y metal mecánico y forjados</p>
+                    <p style="font-size: 13px; color: #6b7280; display:none;">NIT: 900.661.511 - 2</p>
                 </div>
                 <div class="invoice-title">
                     <h1>Cotización</h1>
@@ -387,7 +387,7 @@ function generarPDF() {
             <section class="details-grid">
                 <div class="detail-block">
                     <h3>Proveedor</h3>
-                    <p class="name">BARITZA S.A.S</p>
+                    <p class="name">Cesar Barrios Narvaez</p>
                     <p>BaritzaSAS@gmail.com</p>
                     <p>300 379 6387 - 302 255 6805</p>
                     <p>Malambo - Atlántico Calle 15a # 5a Sur - 87</p>
@@ -405,7 +405,7 @@ function generarPDF() {
                     <tr>
                         <th class="col-item">Item</th>
                         <th class="col-desc">Descripción</th>
-                        <th class="col-unit">Área</th>
+                        <th class="col-unit" style="display:none;">Área</th>
                         <th class="col-price">Precio Unitario</th>
                         <th class="col-total">Total</th>
                     </tr>
