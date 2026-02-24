@@ -96,7 +96,7 @@ function generarPDF() {
                 <td class="col-item">${c[0].textContent}</td>
                 <td class="description"><strong>${c[1].textContent}</strong></td>
                 <td class="col-unit amount">${c[2].textContent}</td>
-                <td class="col-price amount">$${c[3].textContent}</td>
+                <td class="col-price amount" style="display:none;">$${c[3].textContent}</td>
                 <td class="col-total amount">$${c[4].textContent}</td>
             </tr>`;
     }
